@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ProductGroupService} from '../../services/product-group.service';
+import {ProductGroup} from '../../interfaces/product-group';
 
 @Component({
   selector: 'app-product-group',
@@ -6,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-group.component.css']
 })
 export class ProductGroupComponent implements OnInit {
+  productGroups: ProductGroup[] = [];
 
-  constructor() { }
+  constructor(private productGroupService: ProductGroupService) { }
 
   ngOnInit(): void {
   }

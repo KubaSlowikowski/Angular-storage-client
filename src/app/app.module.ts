@@ -3,15 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { MatSliderModule } from '@angular/material/slider';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-import { NavbarComponent } from './navbar/navbar.component';
 import {RouterModule} from '@angular/router';
-import { MainContentComponent } from './main-content/main-content.component';
-import { ProductComponent } from './product/product.component';
-import { HomeComponent } from './home/home.component';
-import { ProductGroupComponent } from './product-group/product-group.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MainContentComponent } from './components/main-content/main-content.component';
+import { ProductComponent } from './components/product/product.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProductGroupComponent } from './components/product-group/product-group.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ProductGroupComponent } from './product-group/product-group.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatSliderModule,
     MatToolbarModule,
     MatIconModule,
