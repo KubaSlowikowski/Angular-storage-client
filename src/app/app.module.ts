@@ -13,6 +13,7 @@ import { MainContentComponent } from './components/main-content/main-content.com
 import { ProductComponent } from './components/product/product.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductGroupComponent } from './components/product-group/product-group.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProductGroupComponent } from './components/product-group/product-group.
     MainContentComponent,
     ProductComponent,
     HomeComponent,
-    ProductGroupComponent
+    ProductGroupComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
